@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Categories</title>
+</head>
+
+<body class="bg-gray-100 overflow-x-hidden">
+
+  <nav class="w-[100%] h-[80px] bg-[#fff]  container container mx-auto  border border-red-500 lg:border-none">  
+    
+    <!-- <img src="./public/img/Language.svg" alt="" class="left-[145px] top-[21px] relative sm:absolute  lef-[-400px] lg:relative"> -->
+<!-- <img src="./public/img/Language.svg" alt="" class="absolute top-[21px] left-[-400px] max-w-screen-sm absolute left-[100px]  lg: relative"> -->
+<img src="./public/img/Language.svg" alt="Language Icon" 
+     class="absolute top-[21px] left-[16px] max-w-screen-sm sm:left-[50px] md:left-0 lg:relative lg:left-[140px]">
+
+     <!-- <select class="border-red-500 mx-[170px]  w-[90px] h-[24px] text-[##16191D] font-[600] text-[14px] sm:"> 
+      <option value="rus">Русский</option>
+      <option value="uzb">O`zbekcha</option>
+     </select> -->
+     <select class="border-red-500 mx-[170px] w-[90px] h-[24px] text-[#16191D] font-[600] text-[14px] hidden sm:block">
+      <option value="rus">Русский</option>
+      <option value="uzb">O`zbekcha</option>
+  </select>
+  
+      
+
+     <select class="border-red-500 w-[40px] h-[24px] text-[#16191D] font-[600] text-[14px] absolute top-[21px] left-[50px] sm:left-[100px] md:left-0 lg:hidden">
+      <option value="rus">Ру</option>
+      <option value="uzb">O`z</option>
+    </select>
+    
+      
+     <h4 class="w-[156px] h-[20px] font-[500] text-[14px] my-[-20px] mx-[300px] text-[#16191D] pl-[30px]"><img src="./public/img/phone.svg" class="mx-[-25px] absolute" alt="">   +998 88 500 50 00</h4>
+     <img src="./public/img/Frame 427319431.png" alt="" class="mx-[620px] my-[-50px]">
+     <img src="./public/img/Logo (5).svg" alt="Mobil rasm" class="block sm:hidden  mx-[150px] my-[-120px]">
+     <h5 class="w-[111px] h-[24px] text-[#16191D] font-[600] mx-[1050px] my-[-110px] pl-[20px]"><i class="bi bi-heart absolute  text-[#388FF3] font-[800]  left-[1040px] top-[35px]"></i>  Избранные</h5>
+     <button class=" mx-[1200px] my-[78px]  w-[118px] h-[40px] bg-[#EAEDF0] rounded-[8px] text-[#16191D]  text-[700] text-[]">
+      Войти
+    </button>
+    
+  </nav>
+  <div class="border w-[1400px] container mx-auto h-[935px] bg-[#FFFFFF] my-[100px]">
+  <div class="max-w-7xl mx-auto py-10 my-[-320px]">
+    <h1 class="text-3xl font-bold mb-6 relative top-[340px] left-[550px]">Категории</h1>
+    <h1 class="text-[#8E9297] w-[536px] relative left-[380px] top-[340px]">Вы можете найти все категории, которые вам нужны от покупателя </h1>
+    <div id="category-container" class="grid w-[1300px]  grid-cols-1 md:grid-cols-3 gap-3 mx-[30px] my-[400px]"></div>
+
+    <label><input  type="text" id="input" class="border border-red-silver pl-[60px] outline-none w-[580px] h-[60px] rounded-[8px] relative top-[-1300px] left-[350px]">
+      <i class="bi text-[#D5D8DB] bi-search relative top-[-1300px] left-[-210px] "></i>
+      <button class="border  relative top-[-1300px] left-[200px] w-[107px] h-[44px] bg-[#16191D] text-[#fff] rounded-[6px]">Поиск</button>
+    </label>
+  </div>
+</div>
+
+<div>
+  <h3 class=" w-[199px] h-[39px] container container mx-auto text-[32px] font-semibold relative top-[-50px]">Объявления</h3>
+  <h4 class="w-[536px] relative  container container mx-auto top-[-40px]  text-center text-[#8E9297]">Вы можете найти все категории, которые вам нужны от покупателя</h4>
+</div>
+<div id="card-container" class="grid grid-cols-4 gap-4 p-6 container w-[1250px] mx-auto">
+  <!-- Cards will be generated dynamically here -->
+</div>
+
+
+<div class="relative  w-[230px] h-[50px] container mx-auto my-[10px]">
+<button class=" container  absolute w-[226px] h-[44px]  bg-[#D6D6D680] text-[#16191D] rounded-[100px]" >Загрузить больше</button>
+</div>
+<footer class="border container mx-auto  w-[100%] h-[203px] relative top-[100px] bg-[#fff]">
+ <img src="./public/img/logo (4).svg" alt="" class="mx-[650px] my-[-60px]">
+ <h5 class="w-[669px] mx-auto h-[42px] my-[50px] text-center">77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает покупки и продажи, связывая продавцов с потенциальными клиентами. </h5>
+ <ul class=" flex mx-auto w-[610px] space-x-[80px]">
+  <li>Доска объявлений</li>
+  <li>Условия пользования</li>
+  <li> +998 88 500 50 00</li>
+ </ul>
+
+ <div class="w-[100%]  h-[48px]  bg-[#fff] my-[20px]">
+ <h5 class="relative left-[240px] top-[10px]"> 77.uz 2023. Все права защищены</h5>
+ <img src="./public/img/Frame 20308.svg" alt="" class="relative left-[1140px] top-[-10px]">
+ </div>
+</footer>
+
+
+ <script>
+
+const categories = [
+      { name: "Для женщин", ads: 4147, image: '/./public/img/image.png',  },
+      { name: "Для мужчин", ads: 547,  image: '/./public/img/image.png', },
+      { name: "Детские товары", ads: 635,  image: '/./public/img/image.png',},
+      { name: "Обувь", ads: 684,  image: '/./public/img/image.png', },
+      { name: "Автотовары", ads: 63, image: '/./public/img/image.png',},
+      { name: "Дача, сады и огороды", ads: 847,  image: '/./public/img/image.png',},
+      { name: "Бытовая техника", ads: 547,  image: '/./public/img/image.png',},
+      { name: "Здоровье", ads: 684,  image: '/./public/img/image.png',},
+      { name: "Украшения и бижутерия", ads: 4147,  image: '/./public/img/image.png',},
+      { name: "Канцелярия", ads: 101, image: '/./public/img/image.png', },
+      { name: "Электроника", ads: 4147,  image: '/./public/img/image.png',},
+      { name: "Домашняя утварь", ads: 4147,  image: '/./public/img/image.png',},
+      { name: "Спорт и отдых", ads: 741,  image: '/./public/img/image.png',},
+      { name: "Новые легковые автомобили", ads: 847,  image: '/./public/img/image.png',},
+      { name: "Мотортранспорт", ads: 4147,  image: '/./public/img/image.png', },
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png',},
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png', },
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png', },
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png', },
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png', },
+      { name: "Аксессуары", ads: 574,  image: '/./public/img/image.png', },
+    ];
+
+    
+
+
+    const container = document.getElementById("category-container");
+
+    categories.forEach((category) => {
+      const card = document.createElement("div");
+      card.className =
+        "flex items-center  gap-y-8 w-[368px] h-[85px] p-4 bg-white shadow rounded-lg hover:shadow-lg transition";
+ 
+      card.innerHTML = `
+      <img class="w-[64px] h-[64px] object-cover relative border  rounded-[12px] left-[-50px]" src="${category.image || './default-image.svg'}" alt="${category.name}">
+
+
+      
+        <div class="flex-grow">
+          <h3 class="text-xl pl-[15px] font-bold">${category.name}</h3>
+          <p class="text-gray-600 pl-[15px]">${category.ads} объявлений</p>
+        </div>
+        <div class="text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+       
+      `;
+      
+      container.appendChild(card);
+    });
+
+const products = [
+            { title: 'Kenik Corneliani Diamond', price: '2 599 000 UZS', location: 'г. Ташкент', image: './public/img/Image (3).svg', phone: '+998 71 200 70 07' },
+            { title: 'Chevrolet Onix 1.2 Turbo', price: '204 000 000 UZS', location: 'г. Самарканд', image: './public/img/Image (4).svg', phone: '+998 71 200 70 07' },
+            { title: '7Saber Trucker Cap', price: '280 000 UZS', location: 'г. Ташкент', image: './public/img/Image (5).svg', phone: '+998 71 200 70 07' },
+            { title: 'Nike Air Max Plus', price: '4 820 000 UZS', location: 'г. Ташкент', image: './public/img/Image (6).svg', phone: '+998 71 200 70 07' },
+            { title: 'Nike Air Max 97', price: '4 820 000 UZS', location: 'г. Ташкент', image: './public/img/Image (8).svg', phone: '+998 71 200 70 07' },
+            { title: 'Apple Watch Series 8', price: '4 500 000 UZS', location: 'г. Ташкент', image: './public/img/Image (9).svg', phone: '+998 71 200 70 07' },
+            { title: 'Geely Monjaro Edition', price: '320 000 000 UZS', location: 'г. Самарканд', image: './public/img/Image (10).svg', phone: '+998 71 200 70 07' },
+            { title: 'Dyson Airwrap', price: '500 USD', location: 'г. Ташкент', image: './public/img/Image (11).svg', phone: '+998 71 200 70 07' },
+            { title: 'Nike Air Max Cap', price: '280 000 UZS', location: 'г. Ташкент', image: './public/img/Image (12).svg', phone: '+998 71 200 70 07' },
+            { title: 'Nike Shoes', price: '4 820 000 UZS', location: 'г. Ташкент', image: './public/img/Image (13).svg', phone: '+998 71 200 70 07' },
+            { title: 'Geely Onix', price: '204 000 000 UZS', location: 'г. Ташкент', image: './public/img/Image (4).svg', phone: '+998 71 200 70 07' },
+            { title: 'Diamond Hat', price: '2 599 000 UZS', location: 'г. Ташкент', image: './public/img/Image (15).svg', phone: '+998 71 200 70 07' }
+        ];
+
+        // Select the card container
+        const Container = document.getElementById('card-container');
+         
+        // Generate cards dynamically
+        products.forEach(product => { 
+            const card = `
+                <div class="bg-white w-[278px] h-[470px] rounded-[12px] shadow-md rounded-lg overflow-hidden">
+                    <img class="w-full h-[278px] object-contain" src="${product.image}" alt="${product.title}">
+                    <div class="p-4">
+                        <h2 class="text-lg font-semibold">${product.title}</h2>
+                        <p class="text-gray-500">${product.location}</p>
+                        <p class="mt-2 text-blue-500 font-semibold">${product.price}</p>
+                        <p class="mt-1 text-xray-500">${product.phone}</p>
+                    </div>
+                </div>
+            `;
+            Container.innerHTML += card;
+        });
+
+
+
+        let input = document.getElementById('input');
+        let body = document.querySelector('body');
+
+input.addEventListener('click', ()=> {
+//  body.style.background = 'silver'
+})
+  </script>
+</body>
+</html>
